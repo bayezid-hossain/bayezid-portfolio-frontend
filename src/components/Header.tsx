@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex flex-col xl:flex-row justify-between items-end gap-y-2">
           {/*logo*/}
           <Link href={'/'} className="hidden xl:flex">
-            <Image src={'/logo.svg'} width={220} height={20} alt="" priority />
+            <Image src={'/logo.png'} width={220} height={20} alt="" priority />
           </Link>
           {/*socials*/}
           <Socials />
