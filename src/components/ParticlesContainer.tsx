@@ -12,11 +12,12 @@ const ParticlesContainer = () => {
   const particlesLoaded = useCallback(async () => {}, []);
   return (
     <Particles
-      className="w-full h-full absolute"
+      className="w-full h-full absolute translate-z-0"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
+        fullScreen: { enable: false },
         background: { color: { value: '' } },
         fpsLimit: 120,
         interactivity: {
@@ -49,7 +50,7 @@ const ParticlesContainer = () => {
             color: '#f5d393',
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 1,
             width: 1,
           },
           collisions: {
