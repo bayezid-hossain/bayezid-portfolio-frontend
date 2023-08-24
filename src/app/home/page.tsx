@@ -1,12 +1,10 @@
 'use client';
-import TypeWriterText from '@/components/BlinkingText/TypeWriterText';
-import Image from 'next/image';
 
-import ParticlesContainer from '@/components/ParticlesContainer';
-import ProjectsBtn from '@/components/ProjectsBtn';
-import Avatar from '@/components/Avatar';
+import ParticlesContainer from '../../components/ParticlesContainer';
+import ProjectsBtn from '../../components/ProjectsBtn';
+import Avatar from '../../components/Avatar';
 import { fadeIn } from '../../../variants';
-import Transition from '@/components/Transition';
+import Transition from '../../components/Transition';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 const HomePage = () => {
