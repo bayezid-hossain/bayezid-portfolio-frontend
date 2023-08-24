@@ -9,7 +9,7 @@ import {
 
 const Socials = () => {
   return (
-    <div className="flex items-center flex-col rounded-full py-8 px-4 bg-white/10 backdrop-blur-sm  xl:flex-row gap-y-5 xl:gap-x-5 text-lg xl:p-0 xl:bg-none xl:rounded-none">
+    <div className="flex items-center flex-col rounded-full py-8 px-4 bg-white/10 backdrop-blur-sm xl:backdrop-blur-none  xl:flex-row gap-y-5 xl:gap-x-5 text-lg xl:p-0 xl:bg-none xl:rounded-none">
       <Link href={''} className="hover:text-accent transition-all duration-300">
         <RiYoutubeLine />
       </Link>{' '}
