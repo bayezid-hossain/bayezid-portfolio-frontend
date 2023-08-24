@@ -11,7 +11,7 @@ const Header = () => {
           href={'/'}
           className="absolute z-30 w-full items-center top-5 justify-center left-0 flex xl:hidden"
         >
-          <Image src={'/logo.svg'} width={220} height={20} alt="" priority />
+          <Image src={'/logo.png'} width={220} height={20} alt="" priority />
         </Link>
         <div className="flex flex-col xl:flex-row justify-between items-end gap-y-2">
           {/*logo*/}
