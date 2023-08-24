@@ -6,15 +6,14 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
-} from "react-icons/si";
-
+} from 'react-icons/si';
 
 //  data
 const aboutData = [
@@ -24,18 +23,22 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="fahtml5" />,
+          <FaCss3 key="facss3" />,
+          <FaJs key="fajs" />,
+          <FaReact key="fareact" />,
+          <SiNextdotjs key="sinextdotjs" />,
+          <SiFramer key="siframer" />,
+          <FaWordpress key="fawordpress" />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="fafigma" />,
+          <SiAdobexd key="siadobexd" />,
+          <SiAdobephotoshop key="siadobephotoshop" />,
+        ],
       },
     ],
   },
