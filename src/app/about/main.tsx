@@ -103,7 +103,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
+    <div className="h-screen bg-primary/30 py-32 text-center xl:text-left ">
       <Transition />
       <Circles />
       {/*avatar*/}

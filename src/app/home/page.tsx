@@ -1,11 +1,7 @@
 import HomePage from './main';
 
 const HomeContainer = () => {
-  return (
-    <div>
-      <HomePage />
-    </div>
-  );
+  return <HomePage />;
 };
 
 export default HomeContainer;
