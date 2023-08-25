@@ -1,14 +1,18 @@
 import Image from 'next/image';
 
-const Avatar = () => {
+interface AvatarProps {
+  photo: string;
+}
+
+const Avatar: React.FC<AvatarProps> = ({ photo }) => {
   return (
-    <div className="hidden xl:flex xl:max-w-none ">
+    <div className="hidden xl:flex xl:max-w-none">
       <Image
-        src={'/avatar.png'}
-        width={737}
-        height={678}
+        src={photo}
+        width={500}
+        height={378}
         alt=""
-        className="translate-z-0 w-full h-full "
+        className="translate-z-0 w-full h-full"
       />
     </div>
   );

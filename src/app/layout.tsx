@@ -1,5 +1,4 @@
 import './globals.css';
-import type { Metadata } from 'next';
 import { Sora } from '@next/font/google';
 import { ReactNode } from 'react'; // Import ReactNode type
 import Nav from '../components/Nav';
@@ -13,11 +12,9 @@ const sora = Sora({
   variable: '--font-sora',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 });
-
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Home',
-  description:
-    'A portfolio website for Bayezid portraying his achievements and personal life',
+  description: 'This is the homepage of the website of Bayezid Al Hossain',
 };
 
 export default function RootLayout({
