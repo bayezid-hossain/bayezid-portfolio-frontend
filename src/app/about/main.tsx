@@ -126,7 +126,7 @@ const About = () => {
             exit="hidden"
             className="h2 special:text-[35px] "
           >
-            Captivating <span className="text-accent">stories</span> create of
+            Captivating <span className="text-accent">stories</span> create
             magnificent designs.
           </motion.h2>
           <motion.p
