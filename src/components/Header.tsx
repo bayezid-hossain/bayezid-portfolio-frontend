@@ -5,7 +5,7 @@ import Socials from './Socials';
 
 const Header = () => {
   return (
-    <header className="absolute z-30 w-full flex items-center h-full justify-between pt-[2.5%] xl:px-20 xl:h-[90px] xl:pt-[5%]">
+    <header className="absolute w-full flex items-center h-full justify-between pt-[2.5%] xl:px-20 xl:h-[90px] ">
       <div className="container mx-auto max-w-[100%]">
         <Link
           href={'/'}
