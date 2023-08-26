@@ -1,5 +1,11 @@
-const Services = () => {
-  return <div>Services</div>;
+import Services from './main';
+
+export const metadata = {
+  title: 'Services That I Provide',
+  description: 'About Bayezid',
 };
 
-export default Services;
+const ServicePage = () => {
+  return <Services />;
+};
+export default ServicePage;
