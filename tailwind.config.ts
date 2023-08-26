@@ -40,6 +40,9 @@ module.exports = {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
+      scale: {
+        '-100': '-1',
+      },
     },
   },
   container: {

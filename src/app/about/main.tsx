@@ -112,9 +112,9 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 z-10 right-[10%]"
+        className="hidden xl:flex absolute bottom-0 z-10 right-[10%] "
       >
-        <Avatar photo="/trial.png" />
+        <Avatar photo="/trial.png" mirror />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-16 ">
         {/*text*/}
