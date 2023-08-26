@@ -13,7 +13,7 @@ const sora = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 });
 export const metadata = {
-  title: 'Bayezid Al Hossain - A Full Stack Developer',
+  title: 'Bayezid - A Full Stack Developer',
   description: 'This is the homepage of the website of Bayezid Al Hossain',
 };
 

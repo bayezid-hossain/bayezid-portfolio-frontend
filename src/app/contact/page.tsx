@@ -1,10 +1,14 @@
-import Bulb from '../../components/Bulb';
-const Contact = () => {
+import Contact from './main';
+export const metadata = {
+  title: 'Contact',
+  description: 'Reach me out!',
+};
+const ContactPage = () => {
   return (
     <div>
-      <Bulb />
+      <Contact />
     </div>
   );
 };
 
-export default Contact;
+export default ContactPage;
