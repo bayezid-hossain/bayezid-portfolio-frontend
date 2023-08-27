@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     screens: {
+      xs: '480px',
       sm: '640px',
       md: '768px',
       lg: '960px',
@@ -22,6 +23,10 @@ module.exports = {
       special: { min: '1200px', max: '1535px' },
     },
     extend: {
+      inset: {
+        '17': '68px',
+        '26': '104px',
+      },
       colors: {
         primary: '#131424',
         secondary: '#393A47',

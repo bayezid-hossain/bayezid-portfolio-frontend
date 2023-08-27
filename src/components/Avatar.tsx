@@ -14,8 +14,8 @@ const Avatar: React.FC<AvatarProps> = ({ photo, mirror }) => {
     >
       <Image
         src={photo}
-        width={500}
-        height={378}
+        width={600}
+        height={478}
         alt=""
         className="translate-z-0 w-full h-full"
       />

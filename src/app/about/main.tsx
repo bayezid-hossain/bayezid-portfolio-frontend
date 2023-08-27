@@ -103,19 +103,9 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-screen bg-primary/30 py-32 text-center xl:text-left ">
-      <Transition />
+    <div className=" ">
       <Circles />
-      {/*avatar*/}
-      <motion.div
-        variants={fadeIn('right', 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 z-10 right-[10%] "
-      >
-        <Avatar photo="/trial.png" mirror />
-      </motion.div>
+
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-16 ">
         {/*text*/}
         <div className="flex-1 flex flex-col justify-center z-50 ">
@@ -195,7 +185,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] h-full"
         >
           <div className="flex gap-x-10 xl:gap-x-12 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {

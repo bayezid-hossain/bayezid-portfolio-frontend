@@ -1,5 +1,7 @@
+import Timeline from '@/components/Timeline';
 import About from './main';
-
+import Transition from '@/components/Transition';
+import ScrollButton from '@/components/Scrollbutton';
 export const metadata = {
   title: 'About',
   description: 'About Bayezid',
@@ -7,8 +9,12 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className=" py-32 text-center xl:text-left">
+      <Transition />
       <About />
+      <ScrollButton />
+
+      <Timeline />
     </div>
   );
 };
