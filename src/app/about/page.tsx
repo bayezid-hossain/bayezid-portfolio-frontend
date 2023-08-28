@@ -12,9 +12,12 @@ const AboutPage = () => {
     <div className=" py-32 text-center xl:text-left">
       <Transition />
       <About />
-      <ScrollButton />
-
-      <Timeline />
+      <a href="#timeline">
+        <ScrollButton />
+      </a>
+      <div id="timeline">
+        <Timeline />
+      </div>
     </div>
   );
 };

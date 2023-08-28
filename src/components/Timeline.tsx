@@ -47,7 +47,7 @@ const Timeline = () => {
       >
         Timeline
       </motion.h2>
-      <motion.div className=" relative container mx-auto px-6 flex flex-col space-y-8">
+      <motion.div className=" relative xl:max-w-[90%] xs:container mx-auto px-6 flex flex-col space-y-8">
         {/* the vertical line */}
         <div className="absolute w-2 z-0 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0"></div>
         {timelineData.map((item, index) => {
@@ -59,7 +59,7 @@ const Timeline = () => {
                 width={100}
                 height={100}
                 alt=""
-                className="h-24 w-24 object-cover rounded-full shadow-md border-4 border-white xs:absolute md:mx-auto md:left-0 md:right-0"
+                className="h-24 w-24 object-cover rounded-full shadow-md border-4 border-white relative xs:absolute z-10 md:mx-auto md:left-0 md:right-0"
               />
 
               {/* triangle and text */}
@@ -72,7 +72,9 @@ const Timeline = () => {
                 transition={{ duration: 0.3 }}
                 whileHover={{ scale: 1.01 }}
                 className={`relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 ${
-                  index % 2 == 0 ? 'md:ml-auto md:pl-16' : 'md:mr-auto md:pr-16'
+                  index % 2 == 0
+                    ? 'md:ml-auto md:pl-16'
+                    : 'md:mr-auto md:pr-16 md:pl-0'
                 }`}
               >
                 {/* triangle */}

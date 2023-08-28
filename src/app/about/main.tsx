@@ -106,7 +106,7 @@ const About = () => {
     <div className=" ">
       <Circles />
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-16 ">
+      <div className="xs:container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-16 ">
         {/*text*/}
         <div className="flex-1 flex flex-col justify-center z-50 ">
           <motion.h2
@@ -124,7 +124,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 py-10 xl:py-0"
           >
             About 3 years ago, I began freelancing as a developer. Since then, I
             have done remote work for agencies, consulted for startups and
@@ -205,7 +205,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4  items-center xl:items-start">
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-10 xl:gap-y-4  items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
@@ -213,11 +213,11 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   {/*title*/}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  {'time' in item && <div>{item.time}</div>}
+                  <div className="font-light my-6  md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex mt-6">-</div>
+                  {'time' in item && <div className="mt-6">{item.time}</div>}
                   {'icons' in item && (
-                    <div className="flex gap-x-4">
+                    <div className="flex gap-x-4 mt-6">
                       {item.icons.map((icon, itemIndex) => (
                         <div key={itemIndex} className="text-2xl text-white ">
                           {icon}
