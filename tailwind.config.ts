@@ -28,6 +28,12 @@ module.exports = {
         '17': '68px',
         '26': '104px',
       },
+      keyframes: {
+        moveDown: {
+          '0%': { height: '0%' },
+          '100%': { height: '100%' },
+        },
+      },
       colors: {
         primary: '#131424',
         secondary: '#393A47',
@@ -41,6 +47,7 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
+        moveDown: 'moveDown 6s linear forwards',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],

@@ -23,6 +23,34 @@ const timelineData = [
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
+  {
+    image: '/t-avt-3.png',
+    title: 'Full Stack Developer',
+    time: '2023',
+    message:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+  },
+  {
+    image: '/t-avt-3.png',
+    title: 'Full Stack Developer',
+    time: '2023',
+    message:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+  },
+  {
+    image: '/t-avt-3.png',
+    title: 'Full Stack Developer',
+    time: '2023',
+    message:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+  },
+  {
+    image: '/t-avt-3.png',
+    title: 'Full Stack Developer',
+    time: '2023',
+    message:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+  },
 ];
 
 import { motion } from 'framer-motion';
@@ -49,7 +77,17 @@ const Timeline = () => {
       </motion.h2>
       <motion.div className=" relative xl:max-w-[90%] xs:container mx-auto px-6 flex flex-col space-y-8">
         {/* the vertical line */}
-        <div className="absolute w-2 z-0 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0"></div>
+        <motion.div
+          className="absolute w-2 z-0 h-full bg-white shadow-md inset-0 left-17 xs:left-[59px] md:mx-auto md:right-0 md:left-0"
+          initial={{ opacity: 0 }}
+          viewport={{ once: true }}
+          whileInView={{
+            opacity: 1,
+            animation: `moveDown ${timelineData.length}s linear forwards`,
+          }}
+          transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1.01 }}
+        ></motion.div>
         {timelineData.map((item, index) => {
           return (
             <div key={index}>
@@ -69,7 +107,8 @@ const Timeline = () => {
                   opacity: 1,
                   x: index % 2 == 0 ? [150, 0] : [-150, 0],
                 }}
-                transition={{ duration: 0.3 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: 0.3 }}
                 whileHover={{ scale: 1.01 }}
                 className={`relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 ${
                   index % 2 == 0

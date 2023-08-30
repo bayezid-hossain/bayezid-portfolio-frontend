@@ -13,7 +13,7 @@ const Header = () => {
         >
           <Image src={'/logo.png'} width={220} height={20} alt="" priority />
         </Link>
-        <div className="flex flex-col xl:flex-row justify-around items-center gap-y-2">
+        <div className="flex flex-col xl:flex-row  justify-around items-center gap-y-2">
           {/*logo*/}
           <Link href={'/'} className="hidden xl:flex">
             <Image src={'/logo.png'} width={220} height={20} alt="" priority />

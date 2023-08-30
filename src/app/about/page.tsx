@@ -1,6 +1,6 @@
 import Timeline from '@/components/Timeline';
 import About from './main';
-import Transition from '@/components/Transition';
+import Link from 'next/link';
 import ScrollButton from '@/components/Scrollbutton';
 export const metadata = {
   title: 'About',
@@ -10,14 +10,7 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <div className=" py-32 text-center xl:text-left">
-      <Transition />
       <About />
-      <a href="#timeline">
-        <ScrollButton />
-      </a>
-      <div id="timeline">
-        <Timeline />
-      </div>
     </div>
   );
 };

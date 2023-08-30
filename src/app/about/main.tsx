@@ -24,6 +24,9 @@ import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 
 import CountUp from 'react-countup';
+import Link from 'next/link';
+import ScrollButton from '@/components/Scrollbutton';
+import Timeline from '@/components/Timeline';
 //  data
 const aboutData = [
   {
@@ -99,11 +102,25 @@ const aboutData = [
     ],
   },
 ];
+const scrollIntoTheView = (id: string) => {
+  let element = document.getElementById(id) as HTMLElement;
+  if (!element) return;
+
+  element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+
+    inline: 'nearest',
+  });
+};
+
 const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
     <div className=" ">
+      <Transition />
+
       <Circles />
 
       <div className="xs:container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-16 ">
@@ -230,6 +247,15 @@ const About = () => {
             })}
           </div>
         </motion.div>
+      </div>
+      <div
+        className="cursor-pointer"
+        onClick={() => scrollIntoTheView('timeline')}
+      >
+        <ScrollButton />
+      </div>
+      <div id="timeline">
+        <Timeline />
       </div>
     </div>
   );
