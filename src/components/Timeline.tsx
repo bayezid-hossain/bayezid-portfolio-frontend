@@ -24,9 +24,16 @@ const timelineData = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: '/t-avt-3.png',
-    title: 'Full Stack Developer',
-    time: '2023',
+    image: '/t-avt-1.png',
+    title: 'Graduation',
+    time: '2021',
+    message:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+  },
+  {
+    image: '/t-avt-2.png',
+    title: 'Flutter Developer',
+    time: '2022',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
@@ -38,9 +45,16 @@ const timelineData = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: '/t-avt-3.png',
-    title: 'Full Stack Developer',
-    time: '2023',
+    image: '/t-avt-1.png',
+    title: 'Graduation',
+    time: '2021',
+    message:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+  },
+  {
+    image: '/t-avt-2.png',
+    title: 'Flutter Developer',
+    time: '2022',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
@@ -79,26 +93,34 @@ const Timeline = () => {
         {/* the vertical line */}
         <motion.div
           className="absolute w-2 z-0 h-full bg-white shadow-md inset-0 left-17 xs:left-[59px] md:mx-auto md:right-0 md:left-0"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1, height: '0%' }}
           viewport={{ once: true }}
           whileInView={{
-            opacity: 1,
-            animation: `moveDown ${timelineData.length}s linear forwards`,
+            height: '100%',
           }}
-          transition={{ duration: 0.3 }}
-          whileHover={{ scale: 1.01 }}
+          transition={{ duration: timelineData.length }}
         ></motion.div>
         {timelineData.map((item, index) => {
           return (
-            <div key={index}>
+            <motion.div key={index}>
               {/* image */}
-              <Image
-                src={item.image}
-                width={100}
-                height={100}
-                alt=""
-                className="h-24 w-24 object-cover rounded-full shadow-md border-4 border-white relative xs:absolute z-10 md:mx-auto md:left-0 md:right-0"
-              />
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: { duration: 0.3 },
+                }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src={item.image}
+                  width={100}
+                  height={100}
+                  alt=""
+                  className="h-24 w-24 object-cover rounded-full shadow-md border-4 border-white relative xs:absolute z-10 md:mx-auto md:left-0 md:right-0"
+                />
+              </motion.div>
 
               {/* triangle and text */}
               <motion.div
@@ -106,8 +128,9 @@ const Timeline = () => {
                 whileInView={{
                   opacity: 1,
                   x: index % 2 == 0 ? [150, 0] : [-150, 0],
+                  transition: { duration: 0.3 },
                 }}
-                transition={{ duration: 0.3, delay: 0.3 }}
+                viewport={{ once: true }}
                 whileHover={{ scale: 1.01 }}
                 className={`relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 ${
                   index % 2 == 0
@@ -133,7 +156,7 @@ const Timeline = () => {
                   <p className="pt-1 text-[#000000]"> {item.message}</p>
                 </div>
               </motion.div>
-            </div>
+            </motion.div>
           );
         })}
         {/* image and content*/}

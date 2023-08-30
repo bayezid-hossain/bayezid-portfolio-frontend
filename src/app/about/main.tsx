@@ -19,12 +19,9 @@ import {
   SiAdobexd,
   SiAdobephotoshop,
 } from 'react-icons/si';
-
-import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 
 import CountUp from 'react-countup';
-import Link from 'next/link';
 import ScrollButton from '@/components/Scrollbutton';
 import Timeline from '@/components/Timeline';
 //  data
@@ -120,7 +117,6 @@ const About = () => {
   return (
     <div className=" ">
       <Transition />
-
       <Circles />
 
       <div className="xs:container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-16 ">

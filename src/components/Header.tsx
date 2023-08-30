@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto max-w-[100%]">
         <Link
           href={'/'}
-          className=" z-30 w-full items-center top-5 justify-center left-0 flex xl:hidden"
+          className=" z-50 w-full items-center top-5 justify-center left-0 flex xl:hidden"
         >
           <Image src={'/logo.png'} width={220} height={20} alt="" priority />
         </Link>

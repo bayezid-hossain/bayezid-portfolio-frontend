@@ -1,10 +1,3 @@
-// import HomePage from './main';
-
-// const HomeContainer = () => {
-//   return <HomePage />;
-// };
-
-// export default HomeContainer;
 export default function Page() {
   return (
     <div className="w-full h-full flex justify-center items-center  bg-black/5 z-50">

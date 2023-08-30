@@ -29,7 +29,7 @@ module.exports = {
         '26': '104px',
       },
       keyframes: {
-        moveDown: {
+        wiggle: {
           '0%': { height: '0%' },
           '100%': { height: '100%' },
         },
@@ -47,7 +47,6 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
-        moveDown: 'moveDown 1s linear forwards',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],

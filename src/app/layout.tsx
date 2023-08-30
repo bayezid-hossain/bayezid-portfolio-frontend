@@ -1,9 +1,10 @@
 import './globals.css';
 import { Sora } from '@next/font/google';
-import { ReactNode } from 'react'; // Import ReactNode type
+import { ReactNode, Suspense } from 'react'; // Import ReactNode type
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import TopLeftImg from '../components/TopLeftImg';
+
 interface LayoutProps {
   children: ReactNode; // Use ReactNode type for the children prop
 }
