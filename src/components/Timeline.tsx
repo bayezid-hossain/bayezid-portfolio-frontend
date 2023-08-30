@@ -107,7 +107,6 @@ const Timeline = () => {
                   opacity: 1,
                   x: index % 2 == 0 ? [150, 0] : [-150, 0],
                 }}
-                viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: 0.3 }}
                 whileHover={{ scale: 1.01 }}
                 className={`relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 ${

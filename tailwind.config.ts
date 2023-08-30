@@ -47,7 +47,7 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
-        moveDown: 'moveDown 6s linear forwards',
+        moveDown: 'moveDown 1s linear forwards',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
